@@ -9,7 +9,7 @@ export default class extends React.Component {
   static async getInitialProps({ query }) {
     const pagina = query.pagina ? Number(query.pagina) : 1;
     const respuesta = await axios.get(
-      `http://www.omdbapi.com/?apikey=af40e2f4&s=batman&page=${pagina}`
+      `//www.omdbapi.com/?apikey=af40e2f4&s=batman&page=${pagina}`
     );
     const peliculas = respuesta.data.Search;
 
